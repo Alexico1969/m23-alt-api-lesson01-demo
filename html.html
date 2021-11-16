@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Hi ! I am a web page !</h1>
+    <div class="container">
+        <div class="center">
+            <p class="center"><img class="rotate" id="image" src="https://freesvg.org/img/Peggy-Hi.png"></p>
+            <p class="center"><button id="rotate_button">click to rotate 90 deg.</button></p>
+        </div>     
+    </div>
+
+    <script>
+        console.log("check 1");
+        $(document).ready(function() {
+            console.log("check 2");
+            $( "#rotate_button" ).click( function() {
+                console.log("check 12");
+                $("#image").toggleClass('rotate');
+            });
+        });
+    </script>
+</body>
+</html>
